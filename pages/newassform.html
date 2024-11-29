@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="author" content="Bruce Tuttle">
+        <meta name="viewport" content="width=device-width, 
+            initial-scale-1, shrink-to-fit=no">
+        <title>new ass</title>
+        <link href="../css/newassform.css" rel="stylesheet">          
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="title">Fall 2024</h1>
+            
+            <a href="../index.html" class="home"><img src="../img/home-7-48.png" alt="icon to return to home page when clicked" ></a>
+            
+            <nav class="links">
+                <ul>
+                    <li class="topli"><a class="toplink" href="../pages/math347.html">MATH 347</a></li>
+                    <li class="topli"><a class="toplink" href="../pages/comp126.html">COMP 126</a></li>
+                    <li class="topli" id="newass"><a class="toplink" href="../pages/newassform.html">New Assignment</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form action="/index.html" method="post">
+                <div class="formcont">
+                    <h1 class="formp">Complete All Fields to Create a New Assignment Card</h1>
+
+                    <label for="name">Class Name (eg: STOR120)</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="assname">Assignment Name</label><br>
+                    <input type="text" id="assname" name="assname"><br><br>
+
+                    <label for="asslnk">Assignment Link</label><br>
+                    <textarea id="asslnk" name="asslnk" rows="2" cols="20"></textarea><br><br>
+
+                    <label for="desc">Short Description of the Assignment</label><br>
+                    <textarea id="desc" name="desc" rows="4" cols="20"></textarea><br><br>
+
+                    <label for="duedt">Due Date</label><br>
+                    <input type="date" id="duedt" name="duedt"><br><br>
+
+
+                    <input type="submit" value="SUBMIT" id="formbtn" onclick="cleartext()">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p class="foot">
+                &copy; Bruce Tuttle 2024
+            </p>
+        </footer>
+    </body>
+    
+    
+</html>
