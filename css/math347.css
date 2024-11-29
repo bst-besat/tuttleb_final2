@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-  }
+}
 
 body{
     background-color: white;
@@ -34,15 +34,16 @@ header{
 
 .links{
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 3;    
+    justify-items: flex-end;  
 }
 
 .links>ul{
     margin-bottom: 0;
     display: grid;
-    grid-template-columns: repeat(3,1fr);    
+    grid-template-columns: repeat(3,auto);    
     padding: 0;
-    
+    margin-top: 2rem;   
 }
 
 .topli {
@@ -50,9 +51,9 @@ header{
     width: fit-content;
     text-align: center;
     align-content: end;
-    border: 1px solid black;
+    border: 1px solid grey;
     border-bottom: none;
-    padding: 2px;
+    padding: 2px;    
 }
 
 a{
@@ -110,4 +111,37 @@ footer{
 .foot{
     margin-top: 0;
     font-size: small;
+}
+
+.noto-sans {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+@media screen and (min-width: 768px){
+
+    header{
+        border-bottom: 0.25rem solid black;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(2,1fr);  
+    }
+
+    .links>ul{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3,auto);  
+    }
+    
+
+    .cardbox{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        width: 45rem;
+        display: grid;
+        justify-self: center;
+    }
+    
+
 }
